@@ -1,0 +1,26 @@
+{
+  "name": "documnet-scanner",
+  "version": "1.0.0",
+  "description": "documnet-scanner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.739.0",
+    "commander": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "download": "^8.0.0",
+    "file-type": "^15.0.0",
+    "lodash": "^4.17.20",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "tesseract.js": "^2.1.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^3.0.0"
+  }
+}

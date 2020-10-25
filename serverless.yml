@@ -1,0 +1,14 @@
+service: documnet-sacnner
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  timeout: 180
+
+functions:
+  sacn:
+    handler: handler.scan
+    timeout: 180
