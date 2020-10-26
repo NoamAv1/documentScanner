@@ -1,5 +1,5 @@
 # OCR services inside a AWS lambda functions
-## Working with AWS Textract, S3, SQS and Tessaract.js
+## Working with AWS Textract, S3, SQS and Tesseract.js
 
 In this repository, I added my code on my take of working 
 with AWS and two different OCR services. 
