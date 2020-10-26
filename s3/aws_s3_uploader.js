@@ -1,13 +1,13 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
-    accessKeyId: '<AWS access key>',
-    secretAccessKey: '<AWS secret access key>'
+    accessKeyId: process.env.ACCESSKEY_ID,
+    secretAccessKey: process.env.SECRETACCESS_KEY
 });
 
 module.exports = (data, attachment_id) => {
     const promise = new Promise((resolve, reject) => {
         const params = {
-            Bucket: '<S3 bucket name>',
+            Bucket: process.env.S3_BUCKET,
             Key: attachment_id + '.json',
             ContentType: 'application/json',
             Body: JSON.stringify(data, null, 2)

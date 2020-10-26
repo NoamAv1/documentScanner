@@ -1,5 +1,5 @@
 'use strict';
-const scanner = require('./index.js');
+const scanner = require('./ocrService.js');
 
 module.exports.scan = async (event) => {
   let message;

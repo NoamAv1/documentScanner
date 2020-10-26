@@ -1,5 +1,6 @@
 const lodash = require("lodash");
 const aws = require("aws-sdk");
+const { EnvironmentCredentials } = require("aws-sdk");
 
 /**
 * This module is doing the AWS Textract and
@@ -9,9 +10,9 @@ const aws = require("aws-sdk");
 
 // updating the aws config
 aws.config.update({
-    accessKeyId: '<AWS access key>',
-    secretAccessKey: '<AWS secret access key>',
-    region: '<AWS region>'
+    accessKeyId: process.env.ACCESSKEY_ID,
+    secretAccessKey: process.env.SECRETACCESS_KEY,
+    region: process.env.REGION
 });
 
 const textract = new aws.Textract();

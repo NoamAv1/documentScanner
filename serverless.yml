@@ -1,4 +1,6 @@
 service: documnet-sacnner
+plugins:
+  - serverless-dotenv-plugin
 
 frameworkVersion: '2'
 
