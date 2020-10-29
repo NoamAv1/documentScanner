@@ -4,11 +4,11 @@ const s3 = new AWS.S3({
     secretAccessKey: process.env.SECRETACCESS_KEY
 });
 
-module.exports = (data, attachment_id) => {
+module.exports = (data, key) => {
     const promise = new Promise((resolve, reject) => {
         const params = {
             Bucket: process.env.S3_BUCKET,
-            Key: attachment_id + '.json',
+            Key: key + '.json',
             ContentType: 'application/json',
             Body: JSON.stringify(data, null, 2)
         };
