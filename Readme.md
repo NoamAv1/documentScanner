@@ -10,6 +10,7 @@ The modules I used are:
  * AWS-sdk
  * dotenv
  * file-type
+ * download
  * node-fetch
  * tesseract.js
  * lodash
