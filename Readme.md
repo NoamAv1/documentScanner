@@ -10,5 +10,8 @@ The modules I used are:
  * AWS-sdk
  * dotenv
  * file-type
+ * node-fetch
  * tesseract.js
  * lodash
+ * serverless
+ * serverless-dotenv-plugin
