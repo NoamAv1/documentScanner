@@ -7,7 +7,7 @@ module.exports.scan = async (event) => {
     const { body, attributes } = event.Records[i];
     const { MessageDeduplicationId } = attributes
 
-    message = await scanner({ external_file: body, attachment_id: MessageDeduplicationId })
+    message = await scanner({ external_file: body, key: MessageDeduplicationId })
   };
 
   return {message};
